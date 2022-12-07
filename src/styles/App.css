@@ -67,6 +67,7 @@
     font-size: 32px;
     text-align: center;
     margin: 20px auto;
+    line-height: 30px;
 }
 .title span {
     font-style: italic;
