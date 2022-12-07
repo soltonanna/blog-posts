@@ -23,10 +23,8 @@ function Posts() {
   
   /** For Pagination */
   const [totalPages, setTotalPages] = useState(0);
-  const [limit, setLimit] = useState(10);
+  const [limit] = useState(10);
   const [page, setPage] = useState(1);
-
-  
 
   const [fetchPosts, isPostLoading, postError] = useFetching( async () => {
     const response = await PostServices.getAll(limit, page);
@@ -63,6 +61,7 @@ function Posts() {
       <Button onClick={() => setModal(true)} style={{ margin: "20px 0 5px" }}> 
         Create 
       </Button>
+
       <Modal visible={modal} setVisible={setModal}>
         <PostForm create={createPost} />
       </Modal>

@@ -24,8 +24,8 @@ const NavBar = () => {
       <Button onClick={logoutHandler}>Logout</Button>
       
       <div className={classes.navbar__links}>
-        <Link to="/todo-list"> Posts </Link>
-        <Link to="/about"> About site </Link>
+        <Link to="/blog-posts"> Posts </Link>
+        <Link to="/about"> About </Link>
       </div>
     </div>
   )

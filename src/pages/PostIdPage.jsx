@@ -36,7 +36,9 @@ const PostIdPage = () => {
                 : postError 
                     ?   <p className='error-message'>Post not found ({postError})</p>
                     :   <div className='post-body'>
-                            <h1>{post.id}. {post.title}</h1>
+                            <h1 className='title'>
+                                {post.id}. {post.title}
+                            </h1>
                             <p>{post.body}</p>
                         </div>
             }
@@ -47,14 +49,14 @@ const PostIdPage = () => {
                 : comError 
                     ?   <p className='error-message'>Comments not found ({comError})</p>
                     :   <div className='comments'>
-                            <h1> Comments:</h1>
+                            <h1 className='sub-title'> Comments:</h1>
                             {
-                            comment.map(com => 
-                                <div key={com.id} className="single-comment">
-                                    <h5>{com.email}</h5>
-                                    <div>{com.body}</div>
-                                </div>
-                            )
+                                comment.map(com => 
+                                    <div key={com.id} className="single-comment">
+                                        <h5>{com.email}</h5>
+                                        <div>{com.body}</div>
+                                    </div>
+                                )
                             }
                         </div>
             }

@@ -17,12 +17,12 @@ const Login = () => {
     setIsAuth(true);
     localStorage.setItem('auth', 'true');
     
-    navigate('/todo-list');
+    navigate('/blog-posts');
   }
 
   return (
-    <div>
-        <h1> Login Page</h1>
+    <div className='container'>
+        <h1 className='title'>Login Page</h1>
         <form onSubmit={loginHandler} >
             <Input type="text" placeholder='login...' />
             <Input type="password" placeholder='password...' />

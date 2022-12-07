@@ -11,7 +11,7 @@ export const privateRoutes = [
         exact: true
     },
     {
-        path: '/todo-list',
+        path: '/blog-posts',
         component: <Posts/>,
         exact: true
     },
