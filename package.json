@@ -1,6 +1,6 @@
 {
   "homepage": "https://soltonanna.github.io/blog-posts",
-  "name": "todo-list",
+  "name": "blog-posts",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
