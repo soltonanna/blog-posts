@@ -1,0 +1,11 @@
+.input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 15px;
+    border: 1px solid var(--main-color);
+}
+
+.input:focus,
+.input:active {
+    outline: none;
+}
